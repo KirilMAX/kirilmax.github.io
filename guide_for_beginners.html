@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pro IT</title>
+    <title>Гайд новичков по первой работе с Arduino</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -241,7 +241,7 @@
                   >
                 </li>
                 <li>
-                  <a href="glavna.html"
+                  <a href="guide_for_beginners.html"
                     ><svg
                       width="23px"
                       height="23px"
@@ -412,105 +412,130 @@
       </div>
     </section>
     <!-- Содержимое -->
-    <div class="osn">
-      <h3>Гайд по первой работе с Arduino</h3>
-      <hr />
-       <div class="yakor">
-      <dl><b>Гайд по первой работе с Arduino</b>
-        <dd><a href="#select_Arduino" class="yak">Arduino IDE</a></dd>
-        <dd><a href="#select_Java" class="yak">Java</a></dd>
-        <dd><a href="#select_obnova" class="yak">Обновления</a></dd>
-        <dd><a href="#select_problem" class="yak">Другие проблемы</a></dd>
-        <dd><a href="#select_IDE" class="yak">Портативная версия Arduino IDE</a></dd>
-        <dd><a href="#select_Arduino_pog" class="yak">Програмирование на Android</a></dd>
-        <dd><a href="#select_china" class="yak">Проверяем за китайцами</a></dd>
+    <div>
 
-      </dl>
-    </div>
-      <div class="text">
-        <p>
-          Здесь находится гайд по первой работе с Arduino, в котором есть ответы
-          на многие вопросы по, подключению, загрузки прошивки, а также по
-          работе с проектами (в скором времени появятся на сайте). Внимательно
-          изучите гайд, тут есть ответы практически на все вопросы по первой
-          работе с Arduino и Arduino IDE. Также на сайте будут уроки по Arduino:
-          по написанию кода, работе с модулями + разбор, и очень подробная
-          документация для них.
-        </p>
-      </div>
-      <h3 id="select_Arduino">Arduino IDE</h3>
-      <hr />
-      <div class="text">
-        <p>
-          <b><i>Arduino IDE</i></b> – программа для написания и загрузки прошивки в плату, скачать можно с официального сайта вот здесь. Перед загрузкой вам предложат пожертвовать, можно отказаться и нажать <i>JUST DOWNLOAD </i>(только скачать). Либо переходим на ссылку прямого скачивания (кнопка ниже версия 2.0). 
-        </p>
-        <button class="skach"><a href="https://www.arduino.cc/en/software" class="ska" target="_blank">Скачать с официального сайта</a></button>
-        <button class="skachg"><a href="https://downloads.arduino.cc/arduino-1.8.19-windows.exe" class="ska">Прямая загрузка</a></button>
-        <img src="https://alexgyver.ru/wp-content/uploads/2020/12/ide.png" alt="">
-        <img src="https://alexgyver.ru/wp-content/uploads/2020/12/ide-download.png" alt="">
-        <p>Для работы рекомендуется  <b>Winodws 7</b> либо <b>Linux/MacOS</b>.</p>
-          <p>Если у вас <b>Windows XP</b>, нужно установливать версию 1.6.13, более свежие версии будут сильно тормозить. Также могут не поддерживать многие библиотеки.</p> <p>Как установить на <b>Linux</b> или <b>MacOS</b> – перейти по кнопке ниже.</p>
-        <button class="skach2"><a href="https://amperka.ru/page/arduino-ide" class="ska" target="_blank">Linux</a></button>
-        <button class="skachg2" id="select"><a href="https://www.arduino.cc/en/guide/macOSX" class="ska" target="_blank">MacOS</a></button>
-        <h3 id="select_Java">Java</h3>
-        <hr>
-        <p>Для старых версий Arduino IDE, нужно установить Java JRE. Скачать можно с официального сайта (По кнопке ниже). <b><i>ВЫБРАТЬ СВОЮ ОПЕРАЦИОННУЮ СИСТЕМУ!!!</i></b>Драйвер Arduino IDE устанавливается, как обычная программа. В процессе установки она попросит установить драйвера. Согдашаемся на установку всего предложенного.
-        </p>
-        <img src="https://alexgyver.ru/wp-content/uploads/2020/12/ide-dr-inst.png" alt="">
-        <button class="skach"><a href="https://www.java.com/ru/download/manual.jsp" class="ska" target="_blank">Скачать с официального сайта</a></button>
-        <h3 id="select_obnova">Обновления</h3>
-        <hr>
-        <p>При выходе новой версии Arduino IDE, нужно полностью удалить старую. Это можно сделать удалив папку с программой. Либо найти в папке файл uninstall.exe и запустить его, либо стандартно через “Установка и удаление программ”. <b><i><u>НО ПЕРЕД УДАЛЕНИЕМ СОХРАНИТЕ НА КОМПЬЮТЕР ИЛИ СЪЁМНЫЙ НОСИТЕЛЬ ПАПКУ “libraries” (папка с библиотеками) И ВСЕ ПАПКИ С ПРОЕКТАМИ!</u></i></b></p>
-        <h3 id="select_problem">Другие проблемы</h3>
-        <hr>
-        <p>Если перестала запускаться <b>Arduino IDE</b> – удаляем файлик preferences.txt из C:\Пользователи (или Users)\Ваш_пользователь\AppData\Local\Arduino15\</p>
-        <h3 id="select_IDE">Портативная версия Arduino IDE</h3>
-        <hr>
-        <p>Вместо полной установки программы можно скачать архив с названием <b>Windows ZIP file</b>. Прямая ссылка ниже. Распаковав архив, получим портативную версию <b>Arduino IDE</b>, которую можно скинуть на флешку и использовать на любом компьютере без установки программы. Но нужно установить драйвер <b>CH341</b> для китайских плат, а также драйверы из папки с программой <b>Arduino IDE</b> Возможно понадобится установить <b>Java</b>.</p>
-        <button class="skach"><a href="https://www.arduino.cc/en/software" class="ska" target="_blank">Скачать с официального сайта</a></button>
-        <button class="skachg"><a href="https://downloads.arduino.cc/arduino-1.8.19-windows.zip" class="ska">Прямая загрузка</a></button>
-        <h3 id="select_Arduino_pog">Програмирование на Android</h3>
-        <hr>
-        <p>Програмироваиь и загружать прошивку <b>Arduino</b> можно с помощью тебефона на базе <b>Android</b> с помощью приложения <b>ArduinoDroid</b>. Скачать по кнопке ниже.</p>
-        <button class="skach4"><a href="https://www.arduino.cc/en/software" class="ska" target="_blank">Скачать с Goolge Play</a></button>
-        <h3 class="zag"><b>Подключение к питанию</b></h3>
-        <h3>    </h3>
-        <h3 id="select_china">Проверяем за китайцами</h3>
-        <hr>
-        <p>Перед подключением к компьютеру рекомендуется провести осмотр платы на наличие кривой пайки компонентов. В худшем случае может СГОРЕТЬ МАТЕРИНСКАЯ ПЛАТА КОМПЬЮТЕРА!!! ФОТО
+      <div class="text-yakor">
+        <dl><b>Гайд по первой работе с Arduino</b>
+          <dd ><a  class="yak">Arduino IDE</a></dd>
+          <dd><a href="#select_Java" class="yak">Java</a></dd>
+          <dd><a href="#select_obnova" class="yak">Обновления</a></dd>
+          <dd><a href="#select_problem" class="yak">Другие проблемы</a></dd>
+          <dd><a href="#select_IDE" class="yak">Портативная версия Arduino IDE</a></dd>
+          <dd><a href="#select_Arduino_pog" class="yak">Програмирование на Android</a></dd>
+          <dd><a href="#select_china" class="yak">Проверяем за китайцами</a></dd>
+          <dd><a href="#select_china" class="yak">Подключение к ПК</a></dd>
+        </div>
+        <div class="yakor">
+   </div>
+   </dl>
+<div class="text">
+ <div class="osn">
+   <h3>Гайд для новичков по первой работе с Arduino</h3>
+   <hr />
+   <p>
+     Здесь находится гайд по первой работе с Arduino, в котором есть ответы
+     на многие вопросы по, подключению, загрузки прошивки, а также по
+     работе с проектами (в скором времени появятся на сайте). Внимательно
+     изучите гайд, тут есть ответы практически на все вопросы по первой
+     работе с Arduino и Arduino IDE. Также на сайте будут уроки по Arduino:
+     по написанию кода, работе с модулями + разбор, и очень подробная
+     документация для них.
+   </p>
+ <h3 id="select_Arduino">Arduino IDE</h3>
+ <hr />
+   <p>
+     <b><i>Arduino IDE</i></b> – программа для написания и загрузки прошивки в плату, скачать можно с официального сайта вот здесь. Перед загрузкой вам предложат пожертвовать, можно отказаться и нажать <i>JUST DOWNLOAD </i>(только скачать). Либо переходим на ссылку прямого скачивания (кнопка ниже версия 2.0). 
+   </p>
+   <button class="skach"><a href="https://www.arduino.cc/en/software" class="ska" target="_blank">Скачать с официального сайта</a></button>
+   <button class="skachg"><a href="https://downloads.arduino.cc/arduino-1.8.19-windows.exe" class="ska">Прямая загрузка</a></button>
+
+   <img class="myimg" src="https://alexgyver.ru/wp-content/uploads/2020/12/ide-download.png" alt="">
+   <p>Для работы рекомендуется  <b>Winodws 7</b> либо <b>Linux/MacOS</b>.</p>
+     <p>Если у вас <b>Windows XP</b>, нужно установливать версию 1.6.13, более свежие версии будут сильно тормозить. Также могут не поддерживать многие библиотеки.</p> <p>Как установить на <b>Linux</b> или <b>MacOS</b> – перейти по кнопке ниже.</p>
+   <button class="skach2"><a href="https://amperka.ru/page/arduino-ide" class="ska" target="_blank">Linux</a></button>
+   <button class="skachg2" id="select"><a href="https://www.arduino.cc/en/guide/macOSX" class="ska" target="_blank">MacOS</a></button>
+   <h3 id="select_Java">Java</h3>
+   <hr>
+   <p>Для старых версий Arduino IDE, нужно установить Java JRE. Скачать можно с официального сайта (По кнопке ниже).</p>
+   <img class="myimg" src="https://alexgyver.ru/wp-content/uploads/2020/12/ide-dr-inst.png" alt="">
+   <button class="skach"><a href="https://www.java.com/ru/download/manual.jsp" class="ska" target="_blank">Скачать с официального сайта</a></button>
+   <h3 id="select_obnova">Обновления</h3>
+   <hr>
+   <p>При выходе новой версии Arduino IDE, нужно полностью удалить старую. Это можно сделать удалив папку с программой. Либо найти в папке файл uninstall.exe и запустить его, либо стандартно через “Установка и удаление программ”. <b><i><u>НО ПЕРЕД УДАЛЕНИЕМ СОХРАНИТЕ НА КОМПЬЮТЕР ИЛИ СЪЁМНЫЙ НОСИТЕЛЬ ПАПКУ “libraries” (папка с библиотеками) И ВСЕ ПАПКИ С ПРОЕКТАМИ!</u></i></b></p>
+   <h3 id="select_problem">Другие проблемы</h3>
+   <hr>
+   <p>Если перестала запускаться <b>Arduino IDE</b> – удаляем файлик preferences.txt</p>
+   <h3 id="select_IDE">Портативная версия Arduino IDE</h3>
+   <hr>
+   <p>Вместо полной установки программы можно скачать архив с названием <b>Windows ZIP file</b>. Прямая ссылка ниже. Распаковав архив, получим портативную версию <b>Arduino IDE</b>, которую можно скинуть на флешку и использовать на любом компьютере без установки программы. Но нужно установить драйвер <b>CH341</b> для китайских плат, а также драйверы из папки с программой <b>Arduino IDE</b> Возможно понадобится установить <b>Java</b>.</p>
+   <button class="skach"><a href="https://www.arduino.cc/en/software" class="ska" target="_blank">Скачать с официального сайта</a></button>
+   <button class="skachg"><a href="https://downloads.arduino.cc/arduino-1.8.19-windows.zip" class="ska">Прямая загрузка</a></button>
+   <h3 id="select_Arduino_pog">Програмирование на Android</h3>
+   <hr>
+   <p>Програмироваиь и загружать прошивку <b>Arduino</b> можно с помощью тебефона на базе <b>Android</b> с помощью приложения <b>ArduinoDroid</b>. Скачать по кнопке ниже.</p>
+   <button class="skach4"><a href="https://www.arduino.cc/en/software" class="ska" target="_blank">Скачать с Goolge Play</a></button>
+   <h3><b>Первое подключение</b></h3>
+   <h3 id="select_china">Проверяем за китайцами</h3>
+   <hr>
+   <p>Перед подключением к компьютеру рекомендуется провести осмотр платы на наличие кривой пайки компонентов. В худшем случае может <b>СГОРЕТЬ МАТЕРИНСКАЯ ПЛАТА КОМПЬЮТЕРА!!!</b></p>
 Что может быть:
-Замкнутые пины
-Не до конца приватные резисторы или конденсаторы, либо их отсутствие 
-“Сопля” между пинами, такое встречается очень часто 
-Подключаем
-Вот что говорит о корректной работе при подключении к питанию Arduino nano/uno
-При подключении к USB горит светодиод PWR (светодиод светится постоянно, так как это питание – power)
-На плате обязательно должен быть прошить загрузчик, светодиод L однократно мигает один или два разу в секунду, в зависимости от прошивки (также светодиод L подключен к пину D13, то есть если на пин подать высокий сигнал, то он загорится, низкий – гаснет)
-Если нажать на кнопку RESET (кнопка сброса, она одна плате), то светодиод L минут  один раз, что означает завершение работы прошивки.
-Кстати, цвета светодиодов могут быть любые
-Если что-то работает не так, то это либо брак, либо кривые руки китайцев. Но это лучше чем брать оригинал за 5000р.
-Драйвера для прошивки по USB
-CH341
-Существует большое количество “Ардуино-совместимые” платы у которых есть порты для прошивки по USB. Что бы они виделись компьютером нужно установить драйвер CH340/CH341
-FTP232
-FTP232 – это USB контроллер, который стоит на оригинальных ардуино. Иногда Китайцы ставят на Arduino поддельный контроллер, который очень быстро выходит из строя. на такие модели ссылки давать не буду
-CP2102
-На некоторых платах Arduino ставят контроллер USB CP2102, на 80% устройств, особенно на Linux установлен этот драйвер.
-Проверка и подключение Arduino
-Arduino подключается к компьютеру по кабелю USB, после подключения должны загорится светодиоды и компьютер должен издать характерный звук (такой-же как и при подключении флешки). 
+<li>Замкнутые пины</li>
+<li>Не до конца приватные резисторы или конденсаторы, либо их отсутствие </li>
+<li>“Сопля” между пинами, такое встречается очень часто</li> 
+<img class="myimg" src="https://alexgyver.ru/wp-content/uploads/2021/07/nano-sold-600x288.jpg" alt="">
+<img class="myimg" src="https://alexgyver.ru/wp-content/uploads/2021/07/smtdef-534x400.jpg" alt="">
+<p>Если что-то не так, исправляем паяльником или феном</p>
+<h3 id="select_Arduino">Подключение к ПК</h3>
+<hr>
+<p>Вот что говорит о корректной работе при подключении к питанию Arduino nano/uno:</p>
+<li>При подключении USB загорается и горит светодиод PWR</li>
+<li>Если плата новая и на ней прошит загрузчик (он обязан быть прошит) – однократно мигает светодиод L</li>
+<li>Примечание: светодиоды могут быть любого цвета</li>
+<li>На новой плате прошито “мигание светодиодом”, поэтому светодиод L продолжит мигать один или два раза в секунду в зависимости от версии загрузчика</li>
+<li>При нажатии на кнопку сброса (<b>RESET</b>, единственная кнопка на плате) должен однократно мигнуть светодиод L, сигнализируя о завершении работы загрузчика.</li>
+<p></p>
+<p>Если ваша плата ведёт себя иначе – скорее всего это заводской брак, если плата новая, или ваши кривые руки – если плата уже паялась и или куда то подключалась, или кривые руки китайцев. Но это лучше чем брать оригинал за 5000р.</p>
+<h3 id="select_Arduino">Драйвера для прошивки по USB</h3>
+<p style="text-align: center;"><b>CH341</b></p>
+<hr>
+<p>Существует большое количество “Ардуино-совместимые” платы у которых есть порты для прошивки по USB. Что бы они виделись компьютером нужно установить драйвер CH340/CH341</p>
+
+<button class="skach"><a href="https://wch-ic.com/downloads/CH341SER_EXE.html" class="ska" target="_blank">Скачать с официального сайта</a></button>
+<button class="skachg"><a href="https://alexgyver.ru/arduino/CH341SER.EXE" class="ska">Прямая загрузка</a></button>
+<p></p>
+<p>Так как я рассматриваю стандартную платформу (Windows, ссылки именно для неё!) преимущественное гол-во пользователей. Mac OS и Linux рассматривать не буду. По этим платформам можете прочитать статью, например на сайте Alex Gyver, с которого взята часть информации.</p>
+<button class="skach4"><a href="https://alexgyver.ru/arduino-first/#Драйвер_USB_контроллера" class="ska" target="_blank">Статья с сайта Alex Gyver</a></button>
+<p></p>
+<p style="text-align: center;"><b>FTP232</b></p>
+<hr>
+<p>FTP232 – это USB контроллер, который стоит на оригинальных ардуино. Иногда Китайцы ставят на Arduino поддельный контроллер, который очень быстро выходит из строя. на такие модели ссылки давать не буду.</p>
+<button class="skach"><a href="https://www.ftdichip.com/Drivers/VCP.htm" class="ska" target="_blank">Скачать с официального сайта</a></button>
+<button class="skachg"><a href="https://www.ftdichip.com/Drivers/CDM/CDM21228_Setup.zip" class="ska">Прямая загрузка</a></button>
+<p></p>
+<p style="text-align: center;"><b>CP2102</b></p>
+<hr>
+<p>На некоторых платах Arduino ставят контроллер USB CP2102, на 80% устройств, особенно на Linux установлен этот драйвер. Если не работает, то нудно скачать.</p>
+<button class="skach"><a href="https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers" class="ska" target="_blank">Скачать с официального сайта</a></button>
+<button class="skachg"><a href="https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip" class="ska">Прямая загрузка</a></button>
+<h3><b>Настройка и работа</b></h3>
+<h3 id="select_china">Подключем правильно</h3>
+<hr>
+<p>Arduino подключается к компьютеру по кабелю USB, после подключения должны загорится светодиоды и компьютер должен издать характерный звук (такой-же как и при подключении флешки). </p>
 Если этого не произошло, то может быть:
-Неисправен USB кабель
-Неисправен USB порт пк
-Если подключение через HUB, пробуем подключить на прямую к пк
-Попробовать другую плату другой пк
-Проверить, что кабель должен быть не, для зарядки, а для передачи информации (data +; data -)
-Не рекомендуется использовать кабеля больше чем 20см
-Проверить установлены ли драйвера
-Если список портов неактивен, то драйвер установлен, некорректно, переустанавливаем заново
-Что бы проверить, какой драйвер нужен, переворачивает плату, ищем длинную микросхему, и смотрим что на ней написано
-CH340 – уустанавливается драйвер по инструкции выше
+<li>Неисправен USB кабель</li>
+<li>Неисправен USB порт пк</li>
+<li>Если подключение через HUB, пробуем подключить на прямую к пк</li>
+<li>Попробовать другую плату или другой пк</li>
+<li>Проверить, что кабель должен быть не, для зарядки, а для передачи информации (data +; data -)</li>
+<li>Не рекомендуется использовать кабеля больше чем 20см</li>
+<li>Проверить установлены ли драйвера</li>
+<li>Проверить список портов. Если он неактивен, то драйвер установлен, некорректно, переустанавливаем заново</li>
+<li>Что бы проверить, какой драйвер нужен, переворачивает плату, ищем длинную микросхему, и смотрим что на ней написано</li>
+<p>CH340 – уустанавливается драйвер по инструкции выше
 FT232R – иинструкция выше</p>
-      </div>
+</div>
+<div class="all"><p class="textall"> /</p><p style="text-align: center; color: aliceblue;">Часть информации взята с канал Alex Gyver:https://alexgyver.ru/ </p></div>
+    </div>
 
     <button id="button" class="but">
       <svg
