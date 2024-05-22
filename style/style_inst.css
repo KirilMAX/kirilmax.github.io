@@ -1,0 +1,59 @@
+body {
+  color: #ffffff; /* Цвет текста */
+  text-align: justify;
+}
+
+body::before {
+  content: "";
+  position: fixed; /* Фиксируем на одном месте */
+  left: 0;
+  right: 0; /* Вся ширин */
+  top: 0;
+  bottom: 0; /* Вся высота */
+  z-index: -1; /* Фон ниже текста */
+  /* Параметры фона */
+  background: url(2.jpg) center / cover no-repeat;
+  margin: 0;
+}
+
+.block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-33%, -50%);
+  margin: -50px;
+}
+
+.ops {
+  font-size: 25px;
+  color: red;
+}
+
+h2 {
+  color: #fc9300;
+}
+button {
+  background-color: #0c9300; /* Green */
+  border-radius: 10px;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2%;
+}
+
+button:active {
+  background-color: #34c200; /* Green */
+  border-radius: 10px;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2%;
+}

@@ -1,0 +1,54 @@
+body {
+  color: #fff; /* Цвет текста */
+  text-align: center;
+}
+
+body::before {
+  content: "";
+  position: fixed; /* Фиксируем на одном месте */
+  left: 0;
+  right: 0; /* Вся ширин */
+  top: 0;
+  bottom: 0; /* Вся высота */
+  z-index: -1; /* Фон ниже текста */
+  /* Параметры фона */
+  background: url(1.jpg) center / cover no-repeat;
+  filter: blur(2.5px); /* Размытие */
+}
+
+.block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button {
+  background-color: #fc9300; /* Green */
+  border-radius: 10px;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2%;
+}
+
+button:active {
+  background-color: #fc5000; /* Green */
+  border-radius: 10px;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2%;
+}
+
+p {
+  font-size: 250%;
+}

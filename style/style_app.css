@@ -1,0 +1,92 @@
+body {
+  color: #000000; /* Цвет текста */
+  text-align: center;
+}
+
+body::before {
+  content: "";
+  position: fixed; /* Фиксируем на одном месте */
+  left: 0;
+  right: 0; /* Вся ширин */
+  top: 0;
+  bottom: 0; /* Вся высота */
+  z-index: -1; /* Фон ниже текста */
+  /* Параметры фона */
+  background: url(2.jpg) center / cover no-repeat;
+}
+
+.block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card {
+  width: 29dvh;
+  height: 39dvh;
+  margin: 4dvh;
+  border-radius: 15px;
+  background-color: #fff;
+  padding: 1dvh;
+}
+img {
+  width: 20dvh;
+  height: 20dvh;
+}
+
+p {
+  text-align: center;
+}
+
+button {
+  background-color: #fc9300; /* Green */
+  border-radius: 10px;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: -4%;
+}
+
+button:active {
+  background-color: #fc5000; /* Green */
+  border-radius: 10px;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: -4%;
+}
+
+.gr {
+  background-color: #0c9300; /* Green */
+  border-radius: 10px;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2%;
+}
+
+.gr:active {
+  background-color: #34c200; /* Green */
+  border-radius: 10px;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2%;
+}
